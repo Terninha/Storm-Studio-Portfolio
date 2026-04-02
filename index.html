@@ -624,7 +624,10 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
     var viewport = document.querySelector('.carousel-viewport');
     var card = document.querySelector('.carousel-card:not(.clone)');
     if (!card || !viewport) return;
-    carouselState.cardWidth = card.getBoundingClientRect().width;
+    /* Use offsetWidth instead of getBoundingClientRect().width to ignore
+       CSS transform scale(0.92) on inactive cards — prevents mobile resize
+       (address bar toggle) from corrupting the card width measurement */
+    carouselState.cardWidth = card.offsetWidth;
     carouselState.offsetX = (viewport.offsetWidth - carouselState.cardWidth) / 2;
   }
 
