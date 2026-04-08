@@ -29,6 +29,8 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
 .nav-links a:hover,.nav-links a.active{color:#EAEAEA}
 .hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer;padding:12px;background:none;border:none;min-width:44px;min-height:44px;align-items:center;justify-content:center}
 .hamburger span{display:block;width:18px;height:1px;background:#EAEAEA}
+.nav-ig{display:flex;align-items:center;margin-left:0.5rem;color:#787774;transition:color 0.3s;text-decoration:none}
+.nav-ig:hover{color:#EAEAEA}
 @media(max-width:768px){.nav-links{display:none}.hamburger{display:flex}}
 
 /* ── Mobile Menu ───────────────────────────────── */
@@ -173,6 +175,7 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
     <li><a href="#trabalhos" class="active">Trabalhos</a></li>
     <li><a href="#processo">Processo</a></li>
     <li><a href="#contato">Contato</a></li>
+    <li><a href="https://www.instagram.com/stormstudio_br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil do Storm Studio no Instagram">Instagram</a></li>
   </ul>
   <button class="hamburger" id="menuOpen" aria-label="Abrir menu">
     <span></span><span></span><span></span>
@@ -187,6 +190,7 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
   <a href="#trabalhos" class="mobile-link">Trabalhos</a>
   <a href="#processo" class="mobile-link">Processo</a>
   <a href="#contato" class="mobile-link">Contato</a>
+  <a href="https://www.instagram.com/stormstudio_br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil do Storm Studio no Instagram" class="mobile-link">Instagram</a>
 </div>
 
 <!-- ═══ SECTION 1 — HERO ═══ -->
@@ -427,15 +431,8 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
       <div class="process-step">
         <p class="step-num">01</p>
         <p class="step-title">Briefing</p>
-        <div class="step-mockup" style="background:#1A1917">
-          <div style="display:flex;align-items:center;justify-content:center;height:100%;padding:1rem">
-            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
-              <line x1="10" y1="12" x2="30" y2="12" stroke="#787774" stroke-width="0.8"/>
-              <line x1="10" y1="18" x2="26" y2="18" stroke="#787774" stroke-width="0.6" opacity="0.6"/>
-              <line x1="10" y1="24" x2="30" y2="24" stroke="#787774" stroke-width="0.6" opacity="0.4"/>
-              <line x1="10" y1="30" x2="22" y2="30" stroke="#787774" stroke-width="0.6" opacity="0.3"/>
-            </svg>
-          </div>
+        <div class="step-mockup" style="overflow:hidden">
+          <img src="assets/briefing.png" alt="Briefing" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"/>
         </div>
         <p class="step-desc">Entendemos o universo da marca, seus códigos visuais e o público que ela busca alcançar.</p>
       </div>
@@ -444,15 +441,8 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
       <div class="process-step">
         <p class="step-num">02</p>
         <p class="step-title">Conceito</p>
-        <div class="step-mockup" style="background:#151412">
-          <div style="display:flex;align-items:center;justify-content:center;height:100%;padding:1rem">
-            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
-              <rect x="8" y="8" width="10" height="10" fill="#D4A853" opacity="0.4"/>
-              <rect x="22" y="8" width="10" height="10" fill="#C8152A" opacity="0.3"/>
-              <rect x="8" y="22" width="10" height="10" fill="#C9897B" opacity="0.4"/>
-              <rect x="22" y="22" width="10" height="10" fill="#787774" opacity="0.3"/>
-            </svg>
-          </div>
+        <div class="step-mockup" style="overflow:hidden">
+          <img src="assets/conceito.png" alt="Conceito" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"/>
         </div>
         <p class="step-desc">Definimos a direção criativa, paleta e linguagem visual que traduz a essência do negócio.</p>
       </div>
@@ -461,14 +451,8 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
       <div class="process-step">
         <p class="step-num">03</p>
         <p class="step-title">Execução</p>
-        <div class="step-mockup" style="background:#1A1917">
-          <div style="display:flex;align-items:center;justify-content:center;height:100%;padding:1rem">
-            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
-              <rect x="6" y="6" width="12" height="16" stroke="#EAEAEA" stroke-width="0.6" opacity="0.4"/>
-              <rect x="22" y="10" width="12" height="12" stroke="#EAEAEA" stroke-width="0.6" opacity="0.4"/>
-              <rect x="14" y="24" width="16" height="10" stroke="#EAEAEA" stroke-width="0.6" opacity="0.25"/>
-            </svg>
-          </div>
+        <div class="step-mockup" style="overflow:hidden">
+          <img src="assets/execucao.png" alt="Execução" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"/>
         </div>
         <p class="step-desc">Cada peça é construída com atenção ao detalhe tipográfico, composição e hierarquia.</p>
       </div>
@@ -477,13 +461,8 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
       <div class="process-step">
         <p class="step-num">04</p>
         <p class="step-title">Entrega</p>
-        <div class="step-mockup" style="background:#0D1117">
-          <div style="display:flex;align-items:center;justify-content:center;height:100%;padding:1rem">
-            <svg viewBox="0 0 40 40" width="40" height="40" fill="none">
-              <rect x="8" y="8" width="24" height="24" rx="2" stroke="#EAEAEA" stroke-width="0.6" opacity="0.3"/>
-              <polyline points="12,22 18,28 30,14" stroke="#EAEAEA" stroke-width="1.2" fill="none" opacity="0.5"/>
-            </svg>
-          </div>
+        <div class="step-mockup" style="overflow:hidden">
+          <img src="assets/entrega.png" alt="Entrega" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy"/>
         </div>
         <p class="step-desc">Arquivos otimizados para feed e stories, com guia de aplicação e calendário editorial.</p>
       </div>
@@ -500,13 +479,14 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
     <div class="contact-blocks">
       <div class="contact-block">
         <p class="contact-block-label">Escritório</p>
-        <p>Curitiba, PR</p>
-        <p class="secondary">(41) 99847-3126</p>
+        <p>Ponta Grossa, PR</p>
+        <p class="secondary">(42) 99809-7354</p>
+        <p class="secondary">(42) 99816-1053</p>
       </div>
       <div class="contact-block">
         <p class="contact-block-label">Digital</p>
-        <p>contato@stormstudio.com.br</p>
-        <p class="secondary">@stormstudio</p>
+        <p>gmconsultoriaswork@gmail.com</p>
+        <p class="secondary">@stormstudio_br</p>
       </div>
     </div>
   </div>
@@ -525,8 +505,9 @@ body{background:#0A0A0A;color:#EAEAEA;font-family:'Outfit',sans-serif;overflow-x
 
 <footer class="footer">
   <p class="footer-copy">© 2026 Storm Studio. Todos os direitos reservados.</p>
+  <p class="footer-copy" style="opacity:0.5">Made by Terninha</p>
   <div class="footer-links">
-    <a href="#">Instagram</a>
+    <a href="https://www.instagram.com/stormstudio_br/" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil do Storm Studio no Instagram">Instagram</a>
     <span class="footer-sep">·</span>
     <a href="#">Portfólio</a>
     <span class="footer-sep">·</span>
